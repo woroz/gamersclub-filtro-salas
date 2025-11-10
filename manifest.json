@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": " Gamers Club Argentina Filtro",
+    "version": "1.0",
+    "description": "Filtra y muestra solo salas de Argentina en Gamers Club",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["*://gamersclub.com.br/*"],
+            "js": ["dist/content.js"],
+            "type": "module"
+        }
+    ]
+}
+
